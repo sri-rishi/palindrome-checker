@@ -1,11 +1,11 @@
-var readlinesync = require("readline-sync");
-var chalk = require("chalk");
+const readlinesync = require("readline-sync");
+const chalk = require("chalk");
 
-var userName = readlinesync.question(chalk.blue("Enter your name - "));
+const userName = readlinesync.question(chalk.blue("Enter your name - "));
 console.log(chalk.cyan(`Welcome ${userName}`));
 console.log(chalk.cyan("Lets check your number is palindrome or not"));
-var userString = readlinesync.question("Enter your number - ")
-var reverseString = userString.split("").reverse().join("");
+const userString = readlinesync.question("Enter your number - ")
+const reverseString = userString.split("").reverse().join("");
 
 if (reverseString === userString ){
   console.log(chalk.yellowBright( `${userString} is palindrome string`));
